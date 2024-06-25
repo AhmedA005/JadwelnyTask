@@ -1,5 +1,81 @@
 body {
-    background-image: url("Jadwelny.png");
+    background-image: url("Jadwelny.png"); 
     background-repeat: no-repeat;
     background-size: cover;
+    background-attachment: fixed;
+    font-family: 'Arial, sans-serif';
+    margin: 0;
+    padding: 0;
+    color: #333;
+}
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+.header {
+    width: 100%;
+    height: 50px;
+    background: rgba(0, 0, 0, 0.7); 
+}
+
+.nav .menu-bar {
+    width: 100%;
+    text-align: center;
+    box-shadow: 1px 2px 4px grey;
+}
+
+.menu-bar li {
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+    margin: 0px 10px;
+    font-size: 18px;
+    font-family: sans-serif;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.menu-bar li a {
+    text-decoration: none;
+    color: white;
+    margin-left: 5px; /* Added margin to separate icon from text */
+}
+
+.menu-bar li i {
+    margin-right: 6px; /* Added margin to separate icon from text */
+}
+
+.menu-bar li:hover {
+    background: #007bff;
+    color: white;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 80vh;
+    padding: 20px;
+}
+
+.content {
+    background: rgba(255, 255, 255, 0.8); /* Semi-transparent background */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 800px;
+    text-align: center;
+}
+
+h1 {
+    color: #137cec;
+    margin-bottom: 20px;
+}
+
+p {
+    line-height: 1.6;
+    margin-bottom: 10px;
 }
